@@ -1,0 +1,23 @@
+/*！@import */
+@tailwind base;
+
+@layer base {
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 21px;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 16.38px;
+    font-weight: 700;
+  }
+  img {
+    display: inline;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;

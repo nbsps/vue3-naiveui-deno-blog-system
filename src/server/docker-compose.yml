@@ -1,0 +1,35 @@
+version: '3.5'
+
+services:
+  db:
+    image: mysql:latest
+    container_name: deno-blog-db
+    command: --default-authentication-plugin=mysql_native_password --explicit_defaults_for_timestamp
+    restart: always
+    volumes:
+      - './presetdb:/presetdb'
+      - 'db-data:/var/lib/mysql'
+    environment:
+      MYSQL_DATABASE: blog
+      MYSQL_ROOT_PASSWORD: root
+  blog:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: deno-blog-api:dev
+    container_name: deno-blog
+    restart: always
+    depends_on:
+      - db
+    volumes:
+      - ./:/usr/app
+    ports:
+      - 16666:16666
+    environment:
+      - DB_HOST=db
+      - PORT=16666
+      - ALLOW_ORIGIN=http://127.0.0.1:16666 # your vps ip or domain with port
+
+volumes:
+  db-data:
+    name: deno-blog-db-dev-data

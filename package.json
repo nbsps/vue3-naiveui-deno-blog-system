@@ -1,0 +1,86 @@
+{
+  "name": "myblog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "prettier": "prettier --write ."
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.4.1",
+    "axios": "^0.23.0",
+    "echarts": "^5.2.1",
+    "highlight.js": "^11.3.1",
+    "marked": "^3.0.8",
+    "normalize.css": "^8.0.1",
+    "scrollreveal": "^4.0.9",
+    "scroxt": "^1.4.2",
+    "sha256": "^0.2.0",
+    "vditor": "^3.8.7",
+    "vue": "^3.0.0",
+    "vue-count-to": "^1.0.13",
+    "vue-router": "^4.0.0-0",
+    "vue3-lazy": "^1.0.0-alpha.1",
+    "vuex": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/preset-env": "^7.15.8",
+    "@tailwindcss/postcss7-compat": "^2.2.17",
+    "@types/scrollreveal": "0.0.7",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "@vue/cli-plugin-babel": "^4.5.14",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "autoprefixer": "^9.8.8",
+    "babel-loader": "^8.2.2",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.0.0",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "naive-ui": "^2.19.8",
+    "postcss": "^7.0.39",
+    "prettier": "^2.2.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
+    "typescript": "~4.1.5",
+    "vfonts": "^0.1.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended",
+      "@vue/typescript/recommended",
+      "@vue/prettier",
+      "@vue/prettier/@typescript-eslint",
+      "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "rules": {
+      "typescript-eslint/no-var-requires": 0,
+      "vue/no-unused-components": 0,
+      "vue/no-parsing-error": 0
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
