@@ -99,13 +99,13 @@ Back: deno+mysql+...
 
 ## TODO
 
-[ ] seo优化？(slug?)
+  - [ ] seo优化？(slug?)
 
-[ ] tsx/jsx重构？
+  - [ ] tsx/jsx重构？
 
-[ ] nodejs/ssm后台？
+  - [ ] nodejs/ssm后台？
 
-[ ] 进一步封装优化？
+  - [ ] 进一步封装优化？
 
 ...
 
