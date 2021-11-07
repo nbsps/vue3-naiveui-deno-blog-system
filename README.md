@@ -2,9 +2,10 @@
 
 <p align=center>
   <a href="http://aurora20.nbsps.top:16666">
-    <img src="https://pic.imgdb.cn/item/618779202ab3f51d91608392.png" style="border-radius: 50%">
+    <img src="./img/avatar-my1.png" style="border-radius: 50%">
   </a>
 </p>
+
 
 <h2 align=center>
    献给樱岛麻衣 | 基于 vue3 + deno 开发 | 前后端分离个人博客系统
