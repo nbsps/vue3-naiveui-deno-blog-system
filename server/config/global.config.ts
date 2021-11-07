@@ -2,7 +2,7 @@ import { bcrypt, sha256 } from '../deps.ts';
 export default {
   mysql: {
     hostname: Deno.env.get('DB_HOST') ?? '127.0.0.1',
-    database: 'blog',
+    db: 'blog',
     username: 'root',
     password: 'root',
   },

@@ -1,7 +1,8 @@
-/dist/*
+/build/*
 .local
 .output.js
 /node_modules/**
+/server/**
 
 **/*.svg
 **/*.sh

@@ -2,11 +2,13 @@
 
 ## Abstract
 
+**献给樱桃麻衣~**
+
 心血来潮花大半个月写的博客系统(样式借鉴了几个著名的主题)，还有很多想弄的功能没弄。
 
-Front: vue3+naiveui+...
+**前端**: **vue3**+vue-router+vuex+**naiveui**+less+tailwind+**···**
 
-Back: deno+mysql+...
+**后端**: **deno**+**oak**+mysql+**···**
 
 ## Project build
 
@@ -107,6 +109,6 @@ Back: deno+mysql+...
 
 - [ ] 进一步封装优化？
 
-...
+
 
 Welcome to fork and pull request.
