@@ -6,7 +6,6 @@
   </a>
 </p>
 
-
 <h2 align=center>
    献给樱岛麻衣 | 基于 vue3 + deno 开发 | 前后端分离个人博客系统
 </h2>
@@ -28,9 +27,6 @@
    <a href="#TODO" style="text-decoration: none;">TODO</a>
 </p>
 
-
-
-
 ## Abstract
 
 **献给樱桃麻衣~**
@@ -43,16 +39,35 @@
 
 ## Project build
 
+### 本地
+
 ```
-1. npm run build
+环境：npm deno mysql
+1. ./server    # 后端目录
+   ./server/presetdb/blog.sql # 启动mysql服务并导入数据库
+   # 启动后端服务
+   deno run --unstable --allow-net --allow-write --allow-read --allow-env server.ts
+2. ./          # 前端目录
+   npm install # 安装依赖
+   npm run serve # 启动服务
+   npm run prettier # 如果有eslint:prettier报错
+3. 访问127.0.0.1:8080
+```
+
+### VM
+
+```
+环境：npm
+1. npm install # 安装依赖
+   npm run build # 打包
 2. copy ./build/* -> ./server/public/
-3. copy ./server/* -> your vps
+3. copy ./server/* -> your vps # 将后端文件夹内容 传输到 VM 上
 4. config: docker-compose.yml
-   service.blog.environment
+   service.blog.environment  # 根据实际情况配置 docker-compose.yml 文件，如 端口 域名 等
 5. docker-compose up -d(如果有报错，建议docker-compose up查看报错，修改后docker-compose up --build)
 6. docker ps
    docker exec -it {mysql container id} /bin/bash
-   mysql -uroot -p
+   mysql -uroot -p  # 运行sqlw
    > use blog;
    > source /presetdb/blog.bd;
 7. 访问http://[your-vps]:16666
@@ -139,7 +154,5 @@
 - [ ] nodejs/ssm 后台？
 
 - [ ] 进一步封装优化？
-
-
 
 Welcome to fork and pull request.
