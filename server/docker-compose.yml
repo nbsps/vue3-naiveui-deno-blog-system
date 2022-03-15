@@ -7,7 +7,7 @@ services:
     command: --default-authentication-plugin=mysql_native_password --explicit_defaults_for_timestamp
     restart: always
     volumes:
-      - './presetdb:/presetdb'
+      - './docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d'
       - 'db-data:/var/lib/mysql'
     environment:
       MYSQL_DATABASE: blog
