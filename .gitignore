@@ -2,6 +2,7 @@
 node_modules
 /build
 项目文档.md
+blog.zip
 
 # local env files
 .env.local

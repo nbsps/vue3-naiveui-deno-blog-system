@@ -9,9 +9,9 @@
 <h2 align=center>
    献给樱岛麻衣 | 基于 vue3 + deno 开发 | 前后端分离个人博客系统
 </h2>
-
 <p align="center">
    <a target="_blank" href="https://github.com/nbsps/vue3-naiveui-deno-blog-system">
+      <img src="https://img.shields.io/badge/node-14.17.5-important"/>
       <img src="https://img.shields.io/badge/npm-6.14.14-important"/>
       <img src="https://img.shields.io/badge/vue-3.2.20-important"/>
       <img src="https://img.shields.io/badge/deno-1.15.3-important"/>
@@ -19,6 +19,7 @@
       <img src="https://img.shields.io/badge/mysql-8.0.12-green"/>
    </a>
 </p>
+
 
 <p align="center"> 
     <a href="#Abstract" style="text-decoration: none;">Abstract</a> | 
@@ -44,7 +45,7 @@
 ```
 环境：npm deno mysql
 1. ./server    # 后端目录
-   ./server/presetdb/blog.sql # 启动mysql服务并导入数据库
+   ./server/docker-entrypoint-initdb.d/blog.sql # 启动mysql服务并导入数据库
    # 启动后端服务
    deno run --unstable --allow-net --allow-write --allow-read --allow-env server.ts
 2. ./          # 前端目录
@@ -57,20 +58,11 @@
 ### VM
 
 ```
-环境：npm
-1. npm install # 安装依赖
-   npm run build # 打包
-2. copy ./build/* -> ./server/public/
-3. copy ./server/* -> your vps # 将后端文件夹内容 传输到 VM 上
-4. config: docker-compose.yml
+1. copy ./server/* -> your vps # 将后端文件夹内容 传输到 VM 上
+2. config: docker-compose.yml
    service.blog.environment  # 根据实际情况配置 docker-compose.yml 文件，如 端口 域名 等
-5. docker-compose up -d(如果有报错，建议docker-compose up查看报错，修改后docker-compose up --build)
-6. docker ps
-   docker exec -it {mysql container id} /bin/bash
-   mysql -uroot -p  # 运行sqlw
-   > use blog;
-   > source /presetdb/blog.bd;
-7. 访问http://[your-vps]:16666
+3. docker-compose up -d(如果有报错，建议docker-compose up查看报错，修改后docker-compose up --build)
+4. 访问http://[your-vps]:16666
 ```
 
 ## Preview
