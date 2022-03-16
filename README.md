@@ -58,8 +58,9 @@
 ### VM
 
 ```
-1. docker-compose up -d(如果有报错，建议docker-compose up查看报错，修改后docker-compose up --build)
-2. 访问http://[your-vps]:16666
+1. cd ./server
+2. docker-compose up -d(如果有报错，建议docker-compose up查看报错，修改后docker-compose up --build)
+3. 访问http://[your-vps]:16666
 ```
 
 ## Preview
