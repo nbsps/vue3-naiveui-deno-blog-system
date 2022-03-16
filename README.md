@@ -58,11 +58,8 @@
 ### VM
 
 ```
-1. copy ./server/* -> your vps # 将后端文件夹内容 传输到 VM 上
-2. config: docker-compose.yml
-   service.blog.environment  # 根据实际情况配置 docker-compose.yml 文件，如 端口 域名 等
-3. docker-compose up -d(如果有报错，建议docker-compose up查看报错，修改后docker-compose up --build)
-4. 访问http://[your-vps]:16666
+1. docker-compose up -d(如果有报错，建议docker-compose up查看报错，修改后docker-compose up --build)
+2. 访问http://[your-vps]:16666
 ```
 
 ## Preview
