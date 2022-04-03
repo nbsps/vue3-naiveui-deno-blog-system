@@ -65,8 +65,6 @@
 
 ## Preview
 
-[demo](http://aurora20.nbsps.top:16666/)
-
 ### 首页
 
 ![](./img/home.png)
