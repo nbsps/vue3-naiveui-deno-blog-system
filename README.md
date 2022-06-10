@@ -63,6 +63,10 @@
 3. 访问http://[your-vps]:16666
 ```
 
+```
+4. /login (Silvensn/123456)
+```
+
 ## Preview
 
 [demo](http://aurora20.nbsps.top:16666/)
