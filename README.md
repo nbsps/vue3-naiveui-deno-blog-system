@@ -58,13 +58,15 @@
 ### VM
 
 ```
-1. cd ./server
-2. docker-compose up -d(如果有报错，建议docker-compose up查看报错，修改后docker-compose up --build)
-3. 访问http://[your-vps]:16666
+1. wget https://raw.githubusercontent.com/nbsps/vue3-naiveui-deno-blog-system/master/blog.sys.gz
+2. tar -zxf blog.sys.gz
+3. cd ./server
+4. docker-compose up -d(如果有报错，建议docker-compose up查看报错，修改后docker-compose up --build)
+5. 访问http://[your-vps]:16666
 ```
 
 ```
-4. /login (Silvensn/123456)
+6. /login (Silvensn/123456)
 ```
 
 ## Preview
