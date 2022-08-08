@@ -58,7 +58,9 @@
 ### VM
 
 ```
-1. wget https://raw.githubusercontent.com/nbsps/vue3-naiveui-deno-blog-system/master/blog.sys.gz
+1. [fast] wget https://hub.fastgit.xyz/nbsps/vue3-naiveui-deno-blog-system/raw/master/blog.sys.gz
+   [default] wget https://raw.githubusercontent.com/nbsps/vue3-naiveui-deno-blog-system/master/blog.sys.gz
+   [defau] wget https://github.com/nbsps/vue3-naiveui-deno-blog-system/raw/master/blog.sys.gz
 2. tar -zxf blog.sys.gz
 3. cd ./server
 4. docker-compose up -d(如果有报错，建议docker-compose up查看报错，修改后docker-compose up --build)
